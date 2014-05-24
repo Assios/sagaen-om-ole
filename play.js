@@ -1,1 +1,102 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('n k={1z:c(){4.11=6.8.Q(0,0,\'11\');4.p=4.6.8.I(\'p\');4.j=4.6.8.I(\'j\');4.r=4.6.8.I(\'r\');4.r.G=0.N;4.p.G=0.N;4.j.G=1.5;4.L=6.M.1q.1v(15.1y.1u);4.9=6.8.1e();4.9.1g(5,\'9\');4.9.s(\'1b\',d);4.9.s(\'1a\',d);4.9.1l=d;4.9.E.v(1.t,1.t);4.a=6.8.1e();4.a.1g(5,\'a\');4.a.s(\'1b\',d);4.a.s(\'1a\',d);4.a.1l=d;4.a.E.v(1.t,1.t);6.f.1p(15.1r.1o);4.7=4.6.8.Q(W/2,H/2-1h,\'1w\');4.7.E.v(0.3,0.3);6.f.i.A(4.7);6.f.i.A(4.9);6.f.i.A(4.a);4.7.1x.v(0.5,0.5);4.l=0;4.1n=4.6.8.w(g,g,"1j: 0",{18:"P 10",14:"#1t",Y:"X"});4.S=4.6.8.w(g,1s,"e: "+e,{18:"P 10",14:"#1N",Y:"X"});4.7.b.J(V,V,Z,Z);4.7.b.1S.y=1R;4.1Q=4.6.13.12.U(T,4.1d,4);4.6.13.12.U(T,4.17,4);4.j.k()},1P:c(){m(4.7.F<g)4.7.F+=1;6.M.K.8(4.C,4);4.L.K.8(4.C,4);m(4.7.1U==1T)4.q();6.f.i.R(4.7,4.9,0,4.q,4);6.f.i.R(4.7,4.a,0,4.q,4)},1X:c(){4.1W.k()},1V:c(){6.1A.b(4.9)},C:c(){4.7.b.D.y=-1O;B=4.6.8.1F(4.7);B.1E({F:-g},1h);B.1f();m((u.1k(u.h()*2)+1)==1){4.p.k()}1D{4.r.k()}},q:c(){4.j.1B();6.1C.1f(\'1G\')},1d:c(){n o=4.9.16();n z=4.a.16();o.b.J(19,1i,1m,1H);z.b.J(19,1i,1m,1M);n h=u.1k(u.h()*1L)-1K;o.O(W,-1I+h);z.O(W,1J+h);o.b.D.x=-1c;z.b.D.x=-1c},17:c(){4.l+=1;m(4.l>e){e=4.l}4.1n.w="1j: "+4.l;4.S.w="e: "+e},}',62,122,'||||this||game|player|add|powerade|poweradef|body|function|true|BEST|physics|20|random|arcade|olee|play|score|if|var|power|ah|restart|mhm|setAll|27|Math|setTo|text|||power2|enable|tweenz|jump|velocity|scale|angle|volume||audio|setSize|onDown|space|input|05|reset|35px|sprite|collide|besttext|1800|loop|420||center|align|25|Arial|sky|events|time|fill|Phaser|getFirstDead|updateScore|font|169|outOfBoundsKill|checkWorldBounds|250|add_p|group|start|createMultiple|100|581|FAVS|floor|enableBody|50|scoretext|ARCADE|startSystem|keyboard|Physics|120|000|SPACEBAR|addKey|bird|anchor|Keyboard|create|debug|stop|state|else|to|tween|menu|90|275|550|200|400|40|fff|600|update|timer|1600|gravity|false|inWorld|render|bgmusic|bgmuz'.split('|'),0,{}))
+var play = {
+    create: function () {
+eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1.7=3.2.9(0,0,\'7\');1.5=1.3.2.4(\'5\');1.6=1.3.2.4(\'6\');1.8=1.3.2.4(\'8\');1.a=1.3.2.4(\'b\');',12,12,'|this|add|game|audio|ah|olee|sky|mhm|sprite|fin|bf'.split('|'),0,{}))
+
+        this.mhm.volume = 0.05;
+        this.ah.volume = 0.05;
+        this.olee.volume = 1.5;
+        this.space = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+        this.powerade = game.add.group();
+        this.powerade.createMultiple(5, 'powerade');
+        this.powerade.setAll('checkWorldBounds', true);
+        this.powerade.setAll('outOfBoundsKill', true);
+        this.powerade.enableBody = true;
+        this.powerade.scale.setTo(1.27, 1.27);
+        this.poweradef = game.add.group();
+        this.poweradef.createMultiple(5, 'poweradef');
+        this.poweradef.setAll('checkWorldBounds', true);
+        this.poweradef.setAll('outOfBoundsKill', true);
+        this.poweradef.enableBody = true;
+        this.poweradef.scale.setTo(1.27, 1.27);
+        game.physics.startSystem(Phaser.Physics.ARCADE);
+        this.player = this.game.add.sprite(W / 2, H / 2 - 100, 'bird');
+        this.player.scale.setTo(0.3, 0.3);
+        game.physics.arcade.enable(this.player);
+        game.physics.arcade.enable(this.powerade);
+        game.physics.arcade.enable(this.poweradef);
+        this.player.anchor.setTo(0.5, 0.5);
+        this.score = 0;
+        this.scoretext = this.game.add.text(20, 20, "FAVS: 0", {
+            font: "35px Arial",
+            fill: "#000",
+            align: "center"
+        });
+        this.besttext = this.game.add.text(20, 120, "BEST: " + BEST, {
+            font: "35px Arial",
+            fill: "#fff",
+            align: "center"
+        });
+        this.player.body.setSize(420, 420, 25, 25);
+        this.player.body.gravity.y = 1600;
+        this.timer = this.game.time.events.loop(1800, this.add_p, this);
+        this.game.time.events.loop(1800, this.updateScore, this);
+        this.olee.play()
+
+		this.finTime = game.time.now + 163000;
+        this.fin.volume = 1.8;
+    },
+    update: function () {
+        if (this.player.angle < 20) this.player.angle += 1;
+        game.input.onDown.add(this.jump, this);
+        this.space.onDown.add(this.jump, this);
+        if (this.player.inWorld == false) this.restart();
+        game.physics.arcade.collide(this.player, this.powerade, 0, this.restart, this);
+        game.physics.arcade.collide(this.player, this.poweradef, 0, this.restart, this);
+        if (game.time.now > this.finTime) {
+        	this.fin.play();
+        	this.finTime += 22000;
+        }
+    },
+    bgmuz: function () {
+        this.bgmusic.play()
+    },
+    render: function () {
+        game.debug.body(this.powerade)
+    },
+    jump: function () {
+        this.player.body.velocity.y = -600;
+        tweenz = this.game.add.tween(this.player);
+        tweenz.to({
+            angle: -20
+        }, 100);
+        tweenz.start();
+        if ((Math.floor(Math.random() * 2) + 1) == 1) {
+            this.ah.play()
+        } else {
+            this.mhm.play()
+        }
+    },
+    restart: function () {
+        this.olee.stop();
+        game.state.start('menu')
+    },
+    add_p: function () {
+        var power = this.powerade.getFirstDead();
+        var power2 = this.poweradef.getFirstDead();
+        power.body.setSize(169, 581, 50, 90);
+        power2.body.setSize(169, 581, 50, 40);
+        var random = Math.floor(Math.random() * 400) - 200;
+        power.reset(W, -275 + random);
+        power2.reset(W, 550 + random);
+        power.body.velocity.x = -250;
+        power2.body.velocity.x = -250
+    },
+    updateScore: function () {
+        this.score += 1;
+        if (this.score > BEST) {
+            BEST = this.score
+        }
+        this.scoretext.text = "FAVS: " + this.score;
+        this.besttext.text = "BEST: " + BEST
+    },
+}

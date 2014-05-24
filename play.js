@@ -3,6 +3,7 @@ var play = {
         this.sky = game.add.sprite(0, 0, 'sky');
         this.ah = this.game.add.audio('ah');
         this.olee = this.game.add.audio('olee');
+        this.olee.play()
         this.mhm = this.game.add.audio('mhm');
         this.fin = this.game.add.audio('bf');
         this.mhm.volume = 0.05;
@@ -29,8 +30,6 @@ var play = {
         game.physics.arcade.enable(this.poweradef);
         this.player.anchor.setTo(0.5, 0.5);
         this.score = 0;
-
-        this.olee.play()
 
         this.scoretext = this.game.add.text(20, 20, "FAVS: 0", {
             font: "35px Arial",

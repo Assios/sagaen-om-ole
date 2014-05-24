@@ -4,7 +4,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
 
         this.mhm.volume = 0.05;
         this.ah.volume = 0.05;
-        this.olee.volume = 1.5;
+        this.olee.volume = 1.0;
         this.space = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
         this.powerade = game.add.group();
         this.powerade.createMultiple(5, 'powerade');

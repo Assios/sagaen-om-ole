@@ -3,12 +3,12 @@ var play = {
         this.sky = game.add.sprite(0, 0, 'sky');
         this.ah = this.game.add.audio('ah');
         this.olee = this.game.add.audio('olee');
+        this.olee.volume = 1.1;
         this.olee.play()
         this.mhm = this.game.add.audio('mhm');
         this.fin = this.game.add.audio('bf');
         this.mhm.volume = 0.05;
         this.ah.volume = 0.05;
-        this.olee.volume = 1.1;
         this.space = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
         this.powerade = game.add.group();
         this.powerade.createMultiple(5, 'powerade');
@@ -60,9 +60,6 @@ var play = {
         	this.fin.play();
         	this.finTime += 22000;
         }
-    },
-    bgmuz: function () {
-        this.bgmusic.play()
     },
     render: function () {
         game.debug.body(this.powerade)

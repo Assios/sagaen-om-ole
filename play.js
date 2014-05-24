@@ -1,10 +1,13 @@
 var play = {
     create: function () {
-eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1.7=3.2.9(0,0,\'7\');1.5=1.3.2.4(\'5\');1.6=1.3.2.4(\'6\');1.8=1.3.2.4(\'8\');1.a=1.3.2.4(\'b\');',12,12,'|this|add|game|audio|ah|olee|sky|mhm|sprite|fin|bf'.split('|'),0,{}))
-
+        this.sky = game.add.sprite(0, 0, 'sky');
+        this.ah = this.game.add.audio('ah');
+        this.olee = this.game.add.audio('olee');
+        this.mhm = this.game.add.audio('mhm');
+        this.fin = this.game.add.audio('bf');
         this.mhm.volume = 0.05;
         this.ah.volume = 0.05;
-        this.olee.volume = 1.0;
+        this.olee.volume = 1.1;
         this.space = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
         this.powerade = game.add.group();
         this.powerade.createMultiple(5, 'powerade');
@@ -26,6 +29,9 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
         game.physics.arcade.enable(this.poweradef);
         this.player.anchor.setTo(0.5, 0.5);
         this.score = 0;
+
+        this.olee.play()
+
         this.scoretext = this.game.add.text(20, 20, "FAVS: 0", {
             font: "35px Arial",
             fill: "#000",
@@ -40,7 +46,6 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
         this.player.body.gravity.y = 1600;
         this.timer = this.game.time.events.loop(1800, this.add_p, this);
         this.game.time.events.loop(1800, this.updateScore, this);
-        this.olee.play()
 
 		this.finTime = game.time.now + 163000;
         this.fin.volume = 1.8;

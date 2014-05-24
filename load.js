@@ -1,8 +1,6 @@
 var load = {
 	preload: function() {
-eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1.0.2(\'3\',\'5/4.6\')',7,7,'load|game|audio|olee|setMaximumCompression|assets|mp3'.split('|'),0,{}))
-
-            //LOAD STUFF
+            game.load.audio('olee', 'assets/setMaximumCompression.mp3')
 	        game.stage.backgroundColor = '#1d1a4f';
             game.load.audio('bf', 'assets/setWidthCompressor.mp3')
             game.load.image('sky', 'assets/sky.jpg');
@@ -11,7 +9,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){w
             game.load.image('poweradef', 'assets/powerade_f.png');
             game.load.image('menu', 'assets/menysky.jpg');
             game.load.audio('ah', 'assets/ah.wav');
-            game.load.audio('mhm', 'assets/mhm.wav');  
+            game.load.audio('mhm', 'assets/mhm.wav');
 	},
 
 	create: function() {

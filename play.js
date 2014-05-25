@@ -79,6 +79,8 @@ var play = {
     },
     restart: function () {
         this.olee.stop();
+        this.olee.stop();
+        this.olee.stop();
         game.state.start('menu')
     },
     add_p: function () {

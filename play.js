@@ -79,7 +79,7 @@ var play = {
     },
     restart: function () {
         this.olee.stop();
-        game.state.start('menu')
+        game.state.start('menu');
     },
     add_p: function () {
         var power = this.powerade.getFirstDead();

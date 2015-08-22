@@ -1,1 +1,10 @@
-eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1 6=h;1 8=f;1 e=c;1 d=0;1 g=0;1 2=l 7.k(6,8,7.j,\'2\',m,a,a);2.3.5(\'4\',4);2.3.5(\'9\',9);2.3.5(\'b\',b);2.3.i(\'4\');',23,23,'|var|game|state|load|add|W|Phaser|H|menu|false|play|400|SCORE|SPEED|1136|BEST|640|start|AUTO|Game|new|null'.split('|'),0,{}))
+var W = 640;
+var H = 1136;
+var SPEED = 400;
+var SCORE = 0;
+var BEST = 0;
+var game = new Phaser.Game(W, H, Phaser.AUTO, 'game', null, false, false);
+game.state.add('load', load);
+game.state.add('menu', menu);
+game.state.add('play', play);
+game.state.start('load');

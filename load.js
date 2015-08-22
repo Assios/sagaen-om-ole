@@ -1,8 +1,8 @@
 var load = {
 	preload: function() {
-            game.load.audio('olee', 'assets/setMaximumCompression.mp3')
+            game.load.audio('olee', 'assets/olee.mp3')
 	        game.stage.backgroundColor = '#1d1a4f';
-            game.load.audio('bf', 'assets/setWidthCompressor.mp3')
+            game.load.audio('bf', 'assets/bf.mp3')
             game.load.image('sky', 'assets/sky.jpg');
             game.load.image('bird', 'assets/bird.png');
             game.load.image('powerade', 'assets/powerade.png');

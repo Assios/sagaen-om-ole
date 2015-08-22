@@ -1,1 +1,16 @@
-eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('b 7={c:4(){3.e=1.6.d(0,0,\'7\');3.1.6.f(5,5,"2: "+2,{8:"9 a",g:"#p",r:"h"});2=0},q:4(){n(1.m.i.j){3.1.k.l(\'o\')}}};',28,28,'|game|SCORE|this|function|20|add|menu|font|35px|Arial|var|create|sprite|bgsky|text|fill|center|activePointer|isDown|state|start|input|if|play|fff|update|align'.split('|'),0,{}))
+var menu = {
+    create: function() {
+        this.bgsky = game.add.sprite(0, 0, 'menu');
+        this.game.add.text(20, 20, "SCORE: " + SCORE, {
+            font: "35px Arial",
+            fill: "#fff",
+            align: "center"
+        });
+        SCORE = 0
+    },
+    update: function() {
+        if (game.input.activePointer.isDown) {
+            this.game.state.start('play')
+        }
+    }
+};

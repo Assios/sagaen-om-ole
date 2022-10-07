@@ -1,5 +1,7 @@
 var menu = {
     create: function() {
+        BEST = parseInt(this.readCookie("bestcookie"));
+
         this.bgsky = game.add.sprite(0, 0, 'menu');
         this.game.add.text(20, 20, "SCORE: " + SCORE, {
             font: "35px Arial",
